@@ -1,13 +1,68 @@
-## Running React on Repl.it
+Overview:
+Supports basic decimal arithmetic for infix expressions.
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+Bracket multiplication is supported. To do negative numbers, use the '-' where appropriate.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+To input your input, either type in the input field provided and press "enter", or use the buttons and click the "=" button.
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+Examples with valid syntax:
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+1(-2)
+-3
+4*-5
+48
+.9+.6
+.9(.6)
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the `.replit` file.
+Example with invalid syntax:
+1(
+()
+4*
+4(+3)
+a
+8()
+7**7
+
+=====================================================================
+
+/*
+components:
+1. Calculator
+2. Screen
+3. Display
+4. InputField
+5. InputButton
+
+*/
+
+/*
+Hierarchy:
+Calculator
+  Screen
+    Input Buttons, Input Field, Evaluate Button
+*/
+
+/*
+Descriptions:
+// Calculator //
+- Stores Calculation History
+- performs calculations
+  - determine correct syntax
+
+// Screen //
+- routes information and renders the display and input buttons
+
+// Display //
+- displays current characters being typed out
+- Displays result of calculation by displaying the result passed in from calculator superclass
+
+// Input Field //
+- allows the user to type their expression
+
+// Input buttons //
+- gives the user another option to input their expression
+
+// evaluation button //
+- triggers calculator to evaluate whatever is in the input field
+
+ */
