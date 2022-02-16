@@ -1,5 +1,6 @@
 Overview:
 Supports basic decimal arithmetic for infix expressions.
+Check out a demonstration of its features here: https://www.loom.com/share/296c7aacef5441bfbca1e5275ec458dc
 
 Bracket multiplication is supported. To do negative numbers, use the '-' where appropriate.
 
